@@ -1,8 +1,14 @@
 FROM ubuntu:18.04
 
 RUN apt-get update \
-  && apt-get install -y build-essential g++ \
-     git wget gfortran cmake tar libev-dev \
-  && apt-get clean   
+  && apt-get install -y \
+     build-essential \
+     g++ \
+     git \
+     wget \
+     gfortran \
+     cmake \ 
+     tar \
+     libev-dev   
      
 ENTRYPOINT ["/bin/bash"]
