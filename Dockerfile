@@ -5,4 +5,4 @@ RUN apt-get update \
      git wget gfortran cmake tar libev-dev \
   && apt-get clean   
      
-ENTRYPOINT["/bin/bash"]
+ENTRYPOINT ["/bin/bash"]
